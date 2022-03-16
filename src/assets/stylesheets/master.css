@@ -1,0 +1,23 @@
+/* Set up the basic page layout using css grid */
+
+.container {
+	height: 100vh;
+	display: grid;
+  grid-template-columns: 0 200px 1fr 0;
+  grid-template-rows: 146px auto 40px;
+  grid-template-areas:
+  'left banner banner rght'
+  'left sidebar content rght'
+	'left footer footer rght';
+	background: #666666;
+	scroll-behavior: smooth;
+}
+
+
+/* Import styles as required */
+
+/* Imports */
+
+@import './app.css';
+@import './index.css';
+@import './sidebar-button.css';

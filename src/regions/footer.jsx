@@ -4,12 +4,31 @@ import React from 'react';
 class Footer extends React.Component {
   render() {
     return (
-      React.createElement('div', {
+      React.createElement('footer', {
         id: "footer",
         className: "footer",
-        style: {backgroundColor:'#339933'},
+        style: {
+          gridArea:'footer',
+          display:'flex',
+          flexFlow:'row',
+          justifyContent:'center',
+          alignItems:'center',
+          backgroundColor:'#666666',
+          textAlign:'center',
+          },
         },
-        "Andrew Biller --- Ashbourne House Technology --- 2022"
+        React.createElement('h4', {
+          style: {
+            fontFamily:'Avant Garde, Tahoma, Arial, Sans-Serif',
+            fontSize:'1em',
+            backgroundColor:'transparent',
+            color:'#cccccc',
+            margin:'0',
+            padding:'0.2em',
+            },
+          },
+          "Andrew Biller --- Ashbourne House Technology --- 2022",
+        )
       )
     )
   }

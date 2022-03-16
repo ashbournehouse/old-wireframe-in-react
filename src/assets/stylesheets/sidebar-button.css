@@ -1,0 +1,28 @@
+.sidebar-button {
+  height: 2em;
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cccccc;
+  margin: 1px;
+  border-top: 4px solid #dddddd;
+  border-right: 4px solid #bbbbbb;
+  border-bottom: 4px solid #bbbbbb;
+  border-top: 4px solid #dddddd;
+  padding: 0;
+}
+
+.sidebar-button:hover {
+  background-color: #dddddd;
+}
+
+.sidebar-button:active {
+  background-color: #eeeedd;
+  border-top: 4px solid #bbbbbb;
+  border-right: 4px solid #eeeeee;
+  border-bottom: 4px solid #eeeeee;
+  border-top: 4px solid #bbbbbb;
+  padding: 0;
+}
