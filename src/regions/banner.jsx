@@ -1,4 +1,6 @@
 import React from 'react';
+import {randomMuppet} from '../random-muppet.mjs';
+
 import bannerimage from '../assets/images/banner-image-ajb.jpg';
 /* import '../assets/stylesheets/header.css'; */
 
@@ -73,15 +75,16 @@ class Banner extends React.Component {
               padding:'0.2em',
               },
             },
-          "Banner Sub-heading"
+            "Banner Sub-heading"
           ),
           React.createElement('div', {
             id:'debug-strip',
             className:'debug-strip',
             style: {
               width:'100%',
-              height:'16px',
-              margin:'0 0 0 2px',
+              height:'24px',
+              backgroundColor:'#000000',
+              margin:'0',
               border:'0',
               padding:'0',
               },
@@ -90,14 +93,16 @@ class Banner extends React.Component {
               style: {
                 height:'16px',
                 fontFamily:'Avant Garde, Tahoma, Arial, Sans-Serif',
-                fontSize:'0.7em',
-                backgroundColor:'#ff0000',
-                color:'#000000',
+                fontSize:'0.8em',
+                backgroundColor:'transparent',
+                color:'#ffff00',
                 margin:'0 0 0 2px',
                 padding:'0.2em 0.2em 0.2em 1em',
+                },
               },
+              "Random muppet is: ", sessionStorage.getItem("muppet"),
 
-            }, "Debug text goes here"),
+            ),
           ),
         )
       )

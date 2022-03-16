@@ -6,6 +6,7 @@ import Sidebar from './regions/sidebar.jsx';
 import Content from './regions/content.jsx';
 import Footer from './regions/footer.jsx';
 
+<script>'./randomMuppet.js'</script>
 
 class App extends React.Component {
   render() {
