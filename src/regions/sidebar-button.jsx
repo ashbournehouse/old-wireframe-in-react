@@ -6,16 +6,28 @@ import '../assets/stylesheets/sidebar-button.css';
 
 class SidebarButton extends React.Component {
   render() {
-    const controlName = this.props.control
+    const controlName = this.props.control;
+    var msgPrefix = "";
+    var msgColour = "#ffff00";
     return (
       React.createElement('button', {
         id: "sidebar-button",
         className: "sidebar-button",
         onClick: () => {
           console.log(`${controlName} clicked`);
-          sessionStorage.setItem("muppet", randomMuppet())
-          window.location.reload(true);
-          return false;
+          if (controlName == "Random") {
+            sessionStorage.setItem("muppet", randomMuppet());
+            msgPrefix = "Random muppet is:";
+            msgColour = "#00ff00";
+            }
+          else {
+            sessionStorage.setItem("muppet", controlName);
+            msgPrefix = "Muppet is:";
+            msgColour = "#ffff00";
+            }
+          var debugPlace = document.getElementById('debug-string');
+          debugPlace.innerText = `${msgPrefix} ${sessionStorage.getItem("muppet")}`;
+          debugPlace.style.color = msgColour;
           },
         },
         controlName,

@@ -12,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
       React.createElement('div', {className:'container'},
-        <Banner />,
+        <Banner main="Banner Main Heading" sub="Banner Sub-heading"/>,
         <Sidebar />,
         <Content />,
         <Footer />

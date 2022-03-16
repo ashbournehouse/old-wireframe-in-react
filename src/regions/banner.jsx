@@ -6,6 +6,8 @@ import bannerimage from '../assets/images/banner-image-ajb.jpg';
 
 class Banner extends React.Component {
   render() {
+    const mainHeading = this.props.main;
+    const subHeading = this.props.sub;
     return (
       React.createElement('header',
         {id:'banner',
@@ -61,7 +63,7 @@ class Banner extends React.Component {
               padding:'0.2em',
               },
             },
-            "Banner Main Heading"
+            mainHeading
           ),
           React.createElement('h2', {
             id:'banner-main-heading',
@@ -75,7 +77,7 @@ class Banner extends React.Component {
               padding:'0.2em',
               },
             },
-            "Banner Sub-heading"
+            subHeading
           ),
           React.createElement('div', {
             id:'debug-strip',
@@ -90,6 +92,8 @@ class Banner extends React.Component {
               },
             },
             React.createElement('p', {
+              id:'debug-string',
+              className:'debug-string',
               style: {
                 height:'16px',
                 fontFamily:'Avant Garde, Tahoma, Arial, Sans-Serif',
@@ -100,7 +104,7 @@ class Banner extends React.Component {
                 padding:'0.2em 0.2em 0.2em 1em',
                 },
               },
-              "Random muppet is: ", sessionStorage.getItem("muppet"),
+              `Random muppet is: ${randomMuppet()}`,
 
             ),
           ),

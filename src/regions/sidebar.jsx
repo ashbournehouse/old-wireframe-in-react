@@ -4,13 +4,13 @@ import SidebarButton from './sidebar-button.jsx';
 /* import '../assets/stylesheets/sidebar.css'; */
 
 const controlNames = [
-  "Control 1",
-  "Control 2",
-  "Control 3",
-  "Control 4",
-  "Control 5",
-  "Control 6",
-  "Control 7",
+  "Kermit",
+  "Piggy",
+  "Animal",
+  "Bert",
+  "Ernie",
+  "Big Bird",
+  "Random",
   ]
 
 class Sidebar extends React.Component {
